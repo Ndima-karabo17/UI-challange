@@ -1,27 +1,47 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const featureToggle = document.getElementById("feature");
-  const featureList = document.getElementById("feature-lists");
+document.addEventListener('DOMContentLoaded', function () {
+  const feature = document.getElementById('feature');
+  const featureList = document.getElementById('feature-lists');
 
-  const companyToggle = document.getElementById("comp");
-  const companyList = companyToggle.querySelector(".company");
+  const company = document.getElementById('comp');
+  const companyList = document.querySelector('.company');
 
- 
-  featureToggle.addEventListener("click", function (event) {
-    event.stopPropagation();
-    featureList.style.display = (featureList.style.display === "block") ? "none" : "block";
-    companyList.style.display = "none"; 
+  feature.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const isVisible = featureList.style.display === 'block';
+
+    closeAllDropdowns();
+    if (!isVisible) {
+      featureList.style.display = 'block';
+    }
   });
 
 
-  companyToggle.addEventListener("click", function (event) {
-    event.stopPropagation();
-    companyList.style.display = (companyList.style.display === "block") ? "none" : "block";
-    featureList.style.display = "none";
+  company.addEventListener('click', function (e) {
+    e.stopPropagation();
+    const isVisible = companyList.style.display === 'block';
+
+    closeAllDropdowns();
+    if (!isVisible) {
+      companyList.style.display = 'block';
+    }
   });
 
 
-  document.addEventListener("click", function () {
-    featureList.style.display = "none";
-    companyList.style.display = "none";
+  featureList.addEventListener('click', function (e) {
+    e.stopPropagation();
   });
+
+  companyList.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
+
+
+  document.addEventListener('click', function () {
+    closeAllDropdowns();
+  });
+
+  function closeAllDropdowns() {
+    featureList.style.display = 'none';
+    companyList.style.display = 'none';
+  }
 });
