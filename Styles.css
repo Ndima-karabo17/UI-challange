@@ -1,0 +1,101 @@
+@media screen and (max-width=800px) {
+    html {
+        background-color: white;
+    }
+    body{
+        background-color: white;
+    }
+}
+
+.first-list {
+    display: inline;
+    padding: 8px 0;
+    position: fixed;
+    gap:20px;
+width: 100%;
+top:0;
+z-index: 100;
+}
+
+.first {
+
+    font-size: medium;
+    font-weight: lighter;
+    display: inline-flex;
+    position: relative;
+    text-decoration:none;
+
+}
+
+.first1 {
+    cursor: pointer;
+}
+
+.first :hover {
+    font-weight: bold;
+}
+
+.second-list {
+    display: inline;
+    cursor: pointer;
+}
+
+.register,
+.learn {
+    background-color: white;
+    border-color: gray;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.make {
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.remote {
+    font: bolder;
+    font-family: sans-serif;
+}
+
+#laptot-guy {
+    width: 400px;
+    height: 500px;
+}
+
+.big-image {
+    float: right;
+    right: 30px;
+}
+
+.second-list {
+    display: inline-flex;
+    margin-top: 0;
+    margin-right: 0;
+    padding-left: 1000px;
+    
+}
+
+.registering {
+    display: inline;
+    position:relative;
+    margin: 10px;
+    cursor: pointer;
+}
+.infor{
+    display: inline-flex;
+}
+.trying{
+    display: inline-flex;
+}
+.feature-list,.company {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+}
+ 
