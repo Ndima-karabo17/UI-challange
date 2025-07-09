@@ -1,8 +1,9 @@
-@media screen and (max-width: 800px) {
-   body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (width: 800px) {
+   body {
+ background-color: white;
+}
+html{
+    background-color: white;
 }
 }
 .first-list {
