@@ -1,12 +1,10 @@
-@media screen and (max-width=800px) {
-    html {
-        background-color: white;
-    }
-    body{
-        background-color: white;
-    }
+@media screen and (max-width: 800px) {
+   body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
+}
 .first-list {
     display: inline;
     padding: 8px 0;
@@ -62,13 +60,15 @@ z-index: 100;
 }
 
 #laptot-guy {
-    width: 400px;
-    height: 500px;
+   width: 100%;
+  max-width: 400px;
+  height: auto;
+
 }
 
 .big-image {
-    float: right;
-    right: 30px;
+  flex: 1;
+  text-align: right;
 }
 
 .second-list {
@@ -98,4 +98,27 @@ z-index: 100;
   list-style: none;
   padding: 10px;
 }
- 
+ .feature-list {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  z-index: 99;
+}
+.hero-section {
+  margin-top: 60px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-text {
+  flex: 1;
+  padding-right: 40px;
+}
