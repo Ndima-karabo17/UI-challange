@@ -1,129 +1,94 @@
-@media screen and (width: 800px) {
-   body {
- background-color: white;
+body{
+    height: 90%;
 }
-html{
-    background-color: white;
+html, body{
+    margin:0;
+    padding: 0;
 }
-}
-.first-list {
-    display: inline;
-    padding: 8px 0;
-    position: fixed;
-    gap:20px;
-width: 100%;
-top:0;
-z-index: 100;
-}
-
-.first {
-
-    font-size: medium;
-    font-weight: lighter;
-    display: inline-flex;
-    position: relative;
-    text-decoration:none;
-
-}
-
-.first1 {
-    cursor: pointer;
-}
-
-.first :hover {
-    font-weight: bold;
-}
-
-.second-list {
-    display: inline;
-    cursor: pointer;
-}
-
-.register,.learn {
-    background-color: white;
-    border-color: gray;
-    cursor: pointer;
-    width: 100px;
-    height: 30px;
-    border-radius: 8px;
-}
-
-.make {
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-.remote {
-    font: bolder;
-    font-family: sans-serif;
-}
-
-#laptot-guy {
-   width: 100%;
-  max-width: 400px;
-  height: auto;
-
-}
-
-.big-image {
-  flex: 1;
-  text-align: right;
-}
-
-.second-list {
-    display: inline-flex;
-    margin-top: 0;
-    margin-right: 0;
-    padding-left: 1000px;
+.career-div{
+    margin-left: 250px;
+    margin-top: -30px;
     
 }
+a{
+    padding: 5px;
+    cursor: pointer;
+}
+.register-div{
+margin-left: 1200px;
+margin-top: -30px;
 
-.registering {
-    display: inline;
-    position:relative;
-    margin: 10px;
+}
+#laptot-guy{
+    width: 400px;
+    height: 500px;
+    margin-left: 1000px;
+    margin-top: -300px;
+}
+.big-image{
+    width: 50%;
+}
+.smaller-div{
+    width: 50%;
+    font-size: 30px;
+     margin-top: 70px;
+     margin-bottom: 20px;
+     height: 300px;
+    
+}
+#first-heading{
+margin-left: 11%;
+line-height: 0.9;
+}
+.paragraph
+{
+    margin-left: 9%;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(139, 158, 155, 0.603);
+
+}
+.learn{
+    background-color: transparent;
+    border-radius: 10px;
+    height:50px;
+    width:120px;
+    margin-left: 9%;
+    cursor:pointer;
+   
+}
+.learn:hover{
+    border: 1px solid rgb(176, 173, 173);
+   
+}
+.registering{
+    background-color: transparent;
+    border-radius: 15px;
+    height:40px;
+    width:100px;
+    margin-left: 9%;
+    cursor: pointer;
+    
+}
+#features{
+    cursor: pointer;
+    border:none;
+}
+#company{
+    cursor: pointer;
+    border:none;
+}
+.career-div{
     cursor: pointer;
 }
 .infor{
     display: inline-flex;
+    margin-top: -300px;
 }
-.trying{
-    display: inline-flex;
+#snap{
+padding-right: 30px;
 }
-.feature-list,.company {
-  display: none;
-  position: absolute;
-  background-color: white;
-  list-style: none;
-  padding: 10px;
-  margin: 15px;
-  
+header{
+    text-align: top;
 }
- .feature-list {
-  display:inline;
-  position: absolute;
-  background-color: white;
- 
-  padding: 10px;
-  border-radius: 5px;
-
-  font: lighter;
-  width: 100px;
- }
-
-.hero-section {
-  margin-top: 60px; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero-text {
-  flex: 1;
-  padding-right: 40px;
-}
-
