@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="icon" type="image/svg" sizes="32x32"href="./images/icon-calendar.svg">
+  <link rel="icon" type="image/svg" sizes="32x32" href="./images/icon-calendar.svg">
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <link href="Styles.css" rel="stylesheet"/>
+  <link href="Styles.css" rel="stylesheet" />
 </head>
+
 <body>
+  <header>
+  <img src="images/logo.svg" alt="a snap logo" id="snap" />
+  <select id="features">
+    <option>Features</option>
+    <option><img src="images/icon-todo.svg" alt="" /><span>Todo List</span></option>
+    <option><img src="images/icon-calendar.svg" alt="" /><span>Calendar</span></option>
+    <option><img src="images/icon-reminders.svg" alt="" /><span>Reminders</span></option>
+    <option><img src="images/icon-planning.svg" alt="" /><span>Planning</span></option>
+  </select>
 
-  <nav class="first-list">
-    <ul class="firstly">
-     <li class="first" ><img src="images/logo.svg" alt="a snap logo" id="snap" /></li>
-    <li id="feature" class="first first1">
-     Features
-      <ul class="feature-list" id="feature-lists">
-        <li><img src="images/icon-todo.svg" alt="" /><span>Todo List</span></li>
-        <li><img src="images/icon-calendar.svg" alt="" /><span>Calendar</span></li>
-        <li><img src="images/icon-reminders.svg" alt="" /><span>Reminders</span></li>
-        <li><img src="images/icon-planning.svg" alt="" /><span>Planning</span></li>
-      </ul>
-   
-    </li>
-   
-  <li id="comp" class=" first first1" >
-    Company
-  <ul class="company">
-    <li><span>History</span></li>
-    <li><span>Our Team</span></li>
-    <li><span>Blog</span></li>
-  </ul>
-  </li>
-    <li class="career first first1">Careers</li>
-    <li class="about first first1">About</li>
-  </ul>
+  <select id="company">
+    <option value="">Company</option>
+    <option value="">History</option>
+    <option value="">Our Team</option>
+    <option value="">Blog</option>
+  </select>
+  <div class="career-div">
+   <nav>
+    
+    <ul>
+       <a>Careers</a>
+      <a>About</a>
+    </ul>
+    
   </nav>
-
-  <ul class="second-list">
-    <li class="registering">Login</li>
-    <li><button class="registering">Register</button></li>
-   </ul>
- 
-  
-   <div class="hero-section">
-  <div class="hero-text">
-    <h1><span class="make">Make</span><br><span class="remote"> remote work</span></h1>
-
-    <p class="paragraph">
-      Get your team in sync, no matter your location.<br>
-      Streamline processes, create team rituals,<br>
-      and watch productivity soar.
-    </p>
-
-    <button class="learn">Learn more</button>
   </div>
+  <div class="register-div">
+    <ul class="second-list">
+   <a>Login</a>
+ <button class="registering">Register</button>
+  </ul>
 
-  <div class="big-image">
-    <img src="images/image-hero-desktop.png" alt="A guy with a laptop" id="laptot-guy"/>
   </div>
-</div>
+</header>
+  <div class="makes-div">
+    <div class="smaller-div">
+      <h1 id="first-heading"><span class="make">Make</span><br><span class="remote"> remote work</span></h1>
+
+      <p class="paragraph" >
+        Get your team in sync, no matter your location.<br>
+        Streamline processes, create team rituals,<br>
+        and watch productivity soar.
+      </p>
+
+      <button class="learn">Learn more</button>
+    </div>
+
+    <div class="big-image">
+      <img src="images/image-hero-desktop.png" alt="A guy with a laptop" id="laptot-guy" />
+    </div>
+  </div>
 
   <div class="infor">
-    <figure><img src="images/client-databiz.svg" alt="databiz picture"/></figure>
+    <figure><img src="images/client-databiz.svg" alt="databiz picture" /></figure>
     <figure><img src="images/client-audiophile.svg" alt="audio phile picture" /></figure>
-    <figure><img src="images/client-meet.svg" alt="meet picture"/></figure>
-    <figure><img src="images/client-maker.svg" alt="maker picture"/></figure>
+    <figure><img src="images/client-meet.svg" alt="meet picture" /></figure>
+    <figure><img src="images/client-maker.svg" alt="maker picture" /></figure>
   </div>
   <script src="Scripts.js"></script>
 </body>
-</html>
 
+</html>
